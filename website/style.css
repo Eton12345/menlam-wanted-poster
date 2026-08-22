@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(circle at center, #292929 0%, #090909 70%);
+    color: #e8e8e8;
+    font-family: Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Main wanted poster */
+
+.wanted-card {
+    max-width: 850px;
+    margin: auto;
+    background: #111;
+    border: 2px solid #777;
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.9),
+        inset 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 35px 20px 25px;
+    border-bottom: 1px solid #555;
+    background: #151515;
+}
+
+.classified {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-family: Impact, Haettenschweiler, sans-serif;
+    font-size: 90px;
+    letter-spacing: 10px;
+    color: #ddd;
+    text-shadow: 4px 4px 0 #000;
+}
+
+.danger {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: 2px solid #9c1c1c;
+    color: #d63636;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Suspect section */
+
+.suspect {
+    display: flex;
+    gap: 35px;
+    padding: 40px;
+    border-bottom: 1px solid #444;
+}
+
+.photo {
+    width: 280px;
+    height: 320px;
+    background: #222;
+    border: 8px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo p {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #888;
+}
+
+.silhouette {
+    width: 130px;
+    height: 180px;
+    border-radius: 50% 50% 20% 20%;
+    background: #050505;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.photo p {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #888;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #8f2020;
+    padding-bottom: 10px;
+}
+
+.details p {
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+    color: #bbb;
+}
+
+/* Case information */
+
+.case,
+.evidence,
+.contact {
+    padding: 35px 40px;
+    border-bottom: 1px solid #444;
+}
+
+section h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.case p {
+    line-height: 1.8;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* Warning */
+
+.warning {
+    padding: 30px 40px;
+    background: #210b0b;
+    border-top: 1px solid #7e2020;
+    border-bottom: 1px solid #7e2020;
+    text-align: center;
+}
+
+.warning h2 {
+    color: #d32f2f;
+    font-family: Arial, sans-serif;
+}
+
+.warning p {
+    color: #bbb;
+    font-family: Arial, sans-serif;
+}
+
+/* Evidence list */
+
+.evidence ul {
+    list-style: none;
+}
+
+.evidence li {
+    padding: 13px 0;
+    border-bottom: 1px solid #292929;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+}
+
+.evidence li::before {
+    content: "▸ ";
+    color: #a52a2a;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #999;
+    font-family: Arial, sans-serif;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #8e1f1f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #bc6464;
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    .suspect {
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .photo {
+        width: 230px;
+        height: 270px;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .details h2 {
+        font-size: 28px;
+    }
+
+    .case,
+    .evidence,
+    .contact {
+        padding: 25px;
+    }
+}
