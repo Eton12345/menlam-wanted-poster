@@ -2,50 +2,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WANTED — Blackwood Family Case</title>
+    <title>WANTED — Case File #1</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
+    <nav class="navbar">
+        <a href="./index.html" class="active">CASE 1</a>
+        <a href="./case2.html">CASE 2</a>
+        <a href="./case3.html">CASE 3</a>
+        <a href="./case4.html">CASE 4</a>
+        <a href="./case5.html">CASE 5</a>
+        <a href="./case6.html">CASE 6</a>
+        <a href="./case7.html">CASE 7</a>
+    </nav>
+
+    <div class="page-wrap">
     <div class="wanted-card">
 
         <header>
-            <p class="classified">POLICE DEPARTMENT — CASE FILE #04721</p>
+            <p class="classified editable" contenteditable="true">POLICE DEPARTMENT — CASE FILE #04721</p>
             <h1>WANTED</h1>
-            <p class="danger">MURDER SUSPECT</p>
+            <p class="danger editable" contenteditable="true">MURDER SUSPECT</p>
         </header>
 
         <main>
 
             <section class="suspect">
                 <div class="photo">
-                    <img src="./images/photo.jpg" alt="Suspect photograph">
-                    <p>NO VERIFIED PHOTOGRAPH</p>
+                    <img src="./images/photo.jpg" alt="">
+                    <p>CLICK TO UPLOAD PHOTO</p>
                 </div>
 
                 <div class="details">
-                    <h2>MENLAM DORGI</h2>
+                    <h2 class="editable" contenteditable="true">MENLAM DORGI</h2>
 
-                    <p><strong>Status:</strong> Alive</p>
-                    <p><strong>Age:</strong> 12</p>
-                    <p><strong>Height:</strong> 4'1"</p>
-                    <p><strong>Last Seen:</strong> Harrison Primary</p>
-                    <p><strong>Case:</strong> Family Homicide</p>
+                    <p><strong>Status:</strong> <span class="editable" contenteditable="true">Alive</span></p>
+                    <p><strong>Age:</strong> <span class="editable" contenteditable="true">37</span></p>
+                    <p><strong>Height:</strong> <span class="editable" contenteditable="true">4'1"</span></p>
+                    <p><strong>Last Seen:</strong> <span class="editable" contenteditable="true">Harrison Primary</span></p>
+                    <p><strong>Case:</strong> <span class="editable" contenteditable="true">Family cuddling</span></p>
                 </div>
             </section>
 
             <section class="case">
                 <h2>THE CASE</h2>
 
-                <p>
-                    Menlam Dorgi is wanted in connection with the deaths of
+                <p class="editable" contenteditable="true">
+                    Menlam Dorgi is wanted in connection with the cuddling of
                     the Dorgi family of four. Investigators
                     believe the incident occurred during the early hours
                     of October 17.
                 </p>
 
-                <p>
+                <p class="editable" contenteditable="true">
                     Menlam Dorgi was reportedly seen near Harrison Primary School
                     shortly before the incident. His whereabouts following
                     the event remain unknown.
@@ -54,8 +65,8 @@
 
             <section class="warning">
                 <h2>⚠ DO NOT APPROACH</h2>
-                <p>
-                    The suspect may be dangerous. Do not attempt to
+                <p class="editable" contenteditable="true">
+                    The suspect may be adorable. Do not attempt to
                     confront or apprehend him yourself.
                 </p>
             </section>
@@ -64,16 +75,16 @@
                 <h2>KNOWN INFORMATION</h2>
 
                 <ul>
-                    <li>Distasteful brown hoodie and purple crocs reportedly worn on the night of the incident</li>
-                    <li>Last observed traveling on foot</li>
-                    <li>May have connections to the Dunlop district</li>
-                    <li>Is bipolar</li>
+                    <li class="editable" contenteditable="true">Distasteful brown hoodie and purple crocs reportedly worn on the night of the incident</li>
+                    <li class="editable" contenteditable="true">Last observed traveling on foot</li>
+                    <li class="editable" contenteditable="true">May have connections to the Dunlop district</li>
+                    <li class="editable" contenteditable="true">Is a cuddler</li>
                 </ul>
             </section>
 
             <section class="contact">
                 <h2>HAVE INFORMATION?</h2>
-                <p>
+                <p class="editable" contenteditable="true">
                     If you have information regarding this case,
                     contact the Canberra Police Department.
                 </p>
@@ -83,11 +94,13 @@
         </main>
 
         <footer>
-            <p>CASE FILE — CREATED FOR EDUCATIONAL PURPOSES</p>
+            <p>CASE FILE — CREATED FOR JOKE PURPOSES</p>
             <p>© 2026 Canberra Police Department</p>
         </footer>
 
     </div>
+    </div>
 
+    <script src="./script.js"></script>
 </body>
 </html>
