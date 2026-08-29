@@ -90,13 +90,23 @@
             <section class="comments">
                 <h2>TIPS &amp; COMMENTS</h2>
 
-                <form class="comment-form">
-                    <input type="text" class="comment-name-input" placeholder="Your name (optional)" maxlength="40">
-                    <textarea class="comment-text-input" placeholder="Share a tip or leave a comment..." maxlength="500" required></textarea>
-                    <button type="submit">POST TIP</button>
-                </form>
-
-                <div class="comments-list"></div>
+                <div class="giscus">
+                    <script src="https://giscus.app/client.js"
+                        data-repo="YOUR_GITHUB_USERNAME/YOUR_REPO_NAME"
+                        data-repo-id="YOUR_REPO_ID"
+                        data-category="Comments"
+                        data-category-id="YOUR_CATEGORY_ID"
+                        data-mapping="pathname"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="dark_dimmed"
+                        data-lang="en"
+                        crossorigin="anonymous"
+                        async>
+                    </script>
+                </div>
             </section>
 
         </main>

@@ -10,7 +10,65 @@ body {
     color: #e8e8e8;
     font-family: Georgia, "Times New Roman", serif;
     min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    background: #0c0c0c;
+    border-bottom: 2px solid #555;
+    padding: 16px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border: 1px solid #444;
+    text-decoration: none;
+    background: #151515;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background: #5a1515;
+    color: #fff;
+    border-color: #8e1f1f;
+}
+
+.navbar a.active {
+    background: #8e1f1f;
+    color: #fff;
+    border-color: #8e1f1f;
+}
+
+.page-wrap {
     padding: 40px 20px;
+}
+
+/* Editable fields */
+
+.editable {
+    border-radius: 2px;
+}
+
+.editable:hover {
+    outline: 1px dashed #777;
+    cursor: text;
+}
+
+.editable:focus {
+    outline: 2px dashed #8e1f1f;
+    background: rgba(255, 255, 255, 0.04);
 }
 
 /* Main wanted poster */
@@ -81,6 +139,13 @@ header h1 {
     align-items: center;
     text-align: center;
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.photo:hover {
+    border-color: #8e1f1f;
 }
 
 .photo img {
@@ -95,25 +160,7 @@ header h1 {
     font-family: Arial, sans-serif;
     font-size: 11px;
     color: #888;
-}
-
-.silhouette {
-    width: 130px;
-    height: 180px;
-    border-radius: 50% 50% 20% 20%;
-    background: #050505;
-    color: #777;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-}
-
-.photo p {
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    color: #888;
+    padding: 0 10px;
 }
 
 .details {
@@ -236,7 +283,7 @@ footer {
 
 @media (max-width: 700px) {
 
-    body {
+    .page-wrap {
         padding: 10px;
     }
 
@@ -267,5 +314,15 @@ footer {
     .evidence,
     .contact {
         padding: 25px;
+    }
+
+    .navbar {
+        gap: 6px;
+        padding: 10px 6px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+        padding: 6px 10px;
     }
 }
